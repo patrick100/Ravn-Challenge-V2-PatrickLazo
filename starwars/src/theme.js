@@ -9,6 +9,7 @@ const colors = {
 const styles = StyleSheet.create({
   /* Text input Bold 17 pt */
   headerText: {
+    fontFamily: 'SF Pro Display',
     fontStyle: 'normal',
     fontWeight: 'bold',
     fontSize: 17,
@@ -16,7 +17,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     textAlign: 'center',
-    letterSpacing: 0.0125
+    letterSpacing: 0.0125,
+    color: '#FFFFFF'
   }
 });
 
