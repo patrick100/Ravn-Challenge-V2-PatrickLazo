@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Text, View, Button } from 'react-native';
+import Detail from '../components/Detail/Detail.js';
 
-function Info({route}) {
-  
+function Info({route, navigation}) {
+
   const {item} = route.params;
+  navigation.setOptions({ title: item.name })
+
   return(
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Info Screen</Text>
-      <Text>item: {JSON.stringify(item)}</Text>
-    </View>
+    <Detail info={item}/>
   );
 }
 

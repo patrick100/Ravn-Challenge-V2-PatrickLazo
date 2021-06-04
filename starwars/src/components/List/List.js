@@ -10,8 +10,6 @@ import styles from './List.style.js';
 const ListFooterComponent = () => (<Loading/>);
 
 export default function List({ navigation }) {
-
-    console.log(navigation);
     const { data, loading } = useQuery(GET_ALL_PEOPLE);
     if (loading) {
       return <Loading />
@@ -32,6 +30,7 @@ export default function List({ navigation }) {
         </TouchableOpacity>
       )}
       ItemSeparatorComponent={renderSeparator}
+      ListFooterComponent={renderSeparator}
       keyExtractor={(item) => item.id.toString()}
     />
     </SafeAreaView >
