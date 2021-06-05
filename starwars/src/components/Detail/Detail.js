@@ -23,7 +23,6 @@ function Detail({info}) {
       <Text style={styles.name}>{item.name}</Text>
     </View>
   );
-  
   const renderSeparator = () => {
     return (
       <View style={styles.separator}/>

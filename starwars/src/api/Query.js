@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
 export const GET_ALL_PEOPLE = gql`
-    query{
-      allPeople {
+      query People($cursor: String){
+      allPeople(first: 5, after: $cursor){
         people {
           id,
           name,
@@ -22,6 +22,10 @@ export const GET_ALL_PEOPLE = gql`
               name
             }
           }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
         }
       }
     }

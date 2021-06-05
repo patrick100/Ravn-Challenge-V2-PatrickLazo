@@ -4,11 +4,11 @@ import {SpinColor,styles} from './Loading.style.js';
 
 export default function Loading() {
     return(
-        <View  style={[styles.container, styles.horizontal]}>
+        <View  style={styles.container}>
         <ActivityIndicator  size="large" color={SpinColor} />
-            <Text
-                style={styles.loadingText}
-            >Loading</Text>
+            <Text style={styles.loadingText}>
+                Loading
+            </Text>
         </View>
     );
 
