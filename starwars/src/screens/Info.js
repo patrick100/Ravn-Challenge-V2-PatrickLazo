@@ -8,7 +8,7 @@ function Info({route, navigation}) {
 
   useEffect(() => {
     navigation.setOptions({ title: item.name })
-  },[])
+  },[item])
 
   return(
     <Detail info={item}/>
