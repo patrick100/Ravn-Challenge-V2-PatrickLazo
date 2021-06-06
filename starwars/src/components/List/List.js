@@ -29,7 +29,6 @@ export default function List({ navigation }) {
     
     //Call data asynchronously 
     if( data.allPeople.pageInfo.hasNextPage ) {
-      console.log(data.allPeople);
       fetchData();
     }
 
