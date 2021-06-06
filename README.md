@@ -3,7 +3,7 @@ This is an Android mobile app that allows you to browse all the characters in th
 
 ## Technologies 
 
-- [React Native](https://github.com/facebook/react-native)
+- [React Native](https://reactnative.dev)
 
 > A framework for building native apps for Android and iOS using React.
 
