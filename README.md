@@ -22,7 +22,7 @@ This is an Android mobile app that allows you to browse all the characters in th
 - [Install NodeJS](https://nodejs.org/en/) on your computer.
 - Install react-native-cli globally on your computer.
 ```
-yarn global add react-native-cli
+npm install -g react-native-cli
 ```
 ### Setup
 - Clone this project
