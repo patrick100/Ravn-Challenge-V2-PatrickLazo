@@ -77,7 +77,7 @@ starwars
     │   ├── Home.js
     │   └── Info.js    
     ├── App.js
-	└── theme.js
+    └── theme.js
 ```
 ### Navigation
 
@@ -93,6 +93,9 @@ If you click in one of the characters the app will load the information of the s
  
 ## Additional information
 
+- The query allPeople explote the graph structure of GraphQL getting all the information necesary when the app start.
+
+- The pagination used is [cursor-based](https://www.apollographql.com/docs/react/pagination/cursor-based/) and the useQuery function necessary to fetch more data was replace for [TypePolicy](https://www.apollographql.com/docs/react/caching/cache-configuration/#typepolicy-fields) introduced in apollo 3.0.
 
 
 
